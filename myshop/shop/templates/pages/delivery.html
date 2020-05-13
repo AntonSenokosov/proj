@@ -1,0 +1,134 @@
+{% extends "shop/base.html" %}
+{% block content %}
+
+<main id="main" class="main">
+            <div class="wrapper">
+    <div class="layout">
+        <div class="layout-main">
+            <div class="layout-main-inner">
+                <section class="page">
+                    <h1 class="main-h">Доставка и Оплата товаров</h1>
+<div class="page-content">
+        <div class="article-text text">
+        <p><strong>Минимальная сумма для оформления заказа 500 грн.</strong></p>
+
+<p>Виды оплаты:</p>
+
+<ul>
+	<li>Наличными для самовывоза и при получении доставки товара нашим транспортом;</li>
+</ul>
+
+<p><span style="font-size:20px;"><strong>Самовывоз</strong></span></p>
+
+<p>Забрать заказ вы сможете после подтверждения менеджером его наличия.</p>
+
+<p style="margin-left: 40px;">Адреса складов:</p>
+
+<p style="margin-left: 40px;"><strong>г. Вишневое, ул. Киевская, 8</strong></p>
+
+<p style="margin-left: 40px;">– склад 1 – строительные материалы</p>
+
+<p style="margin-left: 80px;"><em>Время работы:</em></p>
+
+<p style="margin-left: 80px;"><em>Пн – Пт с 8.00 до 18.00</em></p>
+
+<p style="margin-left: 80px;"><em>Сб с 8.00 до 15.00</em></p>
+
+<p style="margin-left: 80px;"><em>Вс - выходной</em></p>
+
+<p style="margin-left: 40px;">– склад 2 – инструменты и хозяйственные товары</p>
+
+<p style="margin-left: 80px;"><em>Время работы:</em></p>
+
+<p style="margin-left: 80px;"><em>Пн – Пн с 10.00 до 17.00 (<span style="color:#e74c3c;">временно</span>)</em></p>
+
+<p style="margin-left: 80px;"><em>Сб, Вс - выходные</em></p>
+
+<p style="margin-left: 40px;"><strong>г. Киев, бул. Вацлава Гавела, 26</strong></p>
+
+<p style="margin-left: 40px;">– строительные материалы</p>
+
+<p style="margin-left: 80px;"><em>Время работы:</em></p>
+
+<p style="margin-left: 80px;"><em>Пн – Пт с 8.00 до 18.00</em></p>
+
+<p style="margin-left: 80px;"><em>Сб с 8.00 до 15.00</em></p>
+
+<p style="margin-left: 80px;"><em>Вс - выходной</em></p>
+
+<p style="margin-left: 40px;"><strong>г. Киев, ул. Николая Хвылевого, 15</strong> (р-н ст. м. "Красный Хутор")</p>
+
+<p style="margin-left: 40px;">– строительные материалы – c 13.04 cклад (<span style="color:#e74c3c;">временно</span>) не работает</p>
+
+<p><span style="font-size:20px;"><strong>Доставка по Киеву и Киевской области</strong></span></p>
+
+<p>Стоимость доставки рассчитывается индивидуально менеджером после оформления заказа.</p>
+
+<p>Способы оплаты:</p>
+
+<ul>
+	<li>Наличными при получении товара;</li>
+</ul>
+
+<p><span style="font-size:20px;"><strong>Доставка Новой почтой</strong></span></p>
+
+<p>Заказы на отправку Новой почтой оформляются <strong>только через сайт</strong>.</p>
+
+<p>Примечание по оплате:</p>
+
+
+<p><a href="http://novaposhta.ua/ru/delivery" rel="nofollow" target="_blank">Стоимость доставки просчитывается согласно тарифам </a>&nbsp;<strong>"Новой Почты."</strong></p>
+
+<p><strong>Товары</strong>, отправляемые только <strong>по 100%</strong> <strong>предоплате</strong>:</p>
+
+<ul>
+	<li>Крупногабаритный товар;</li>
+	<li>Пластиковые изделия;</li>
+	<li>Строительные материалы.</li>
+</ul>
+
+<p><strong>Товары, не отправляем</strong> Новой почтой:</p>
+
+<ul>
+	<li>Стеклянные изделия;</li>
+	<li>Растворители;</li>
+	<li>Затонированная продукция.</li>
+</ul>
+
+<p>тел.: &nbsp;</p>
+
+<p style="margin-left: 40px;">+38 (044) 3550-805 &nbsp;</p>
+
+<p style="margin-left: 40px;">+38 (066) 5555-686 &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+<p style="margin-left: 40px;">+38 (097) 5555-686 &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+<p style="margin-left: 40px;">+38 (093) 5555-686</p>
+    </div>
+</div>                </section>
+            </div>
+        </div>
+        <aside class="layout-aside" style="">
+    <div class="layout-aside-inner">
+        <nav class="sideMenu ">
+            <ul class="sideMenu-list" class="selected">
+
+                                    <li class="sideMenu-i">
+                        <div class="sideMenu-t"><a class="sideMenu-a" href={% url "shop:about" %}">О нас</a></div>
+                                            </li>
+                                    <li class="sideMenu-i">
+                        <div class="sideMenu-t __active"><a class="sideMenu-a" href={% url "shop:delivery" %}">Доставка и Оплата</a></div>
+                                                                                                </li>
+                                    <li class="sideMenu-i">
+                        <div class="sideMenu-t"><a class="sideMenu-a" href={% url "shop:contact" %}">Контакты</a></div>
+                                            </li>
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+    </div>
+</div>
+</main>
+
+    {% endblock content %}

@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}Интернет-магазин{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+</head>
+<body>
+<header id="logot">
+    <nav id="rr">
+        <ul class="menu">
+            <li><a href="{% url "shop:about" %}">Про нас</a></li>
+            <li><a href="{% url "shop:contact" %}">Контакти</a></li>
+            <li><a href="{% url "shop:delivery" %}">Оплата і доставка</a></li>
+        </ul>
+    </nav>
+    <div>
+        <p class="log" align="center"><a  href="{% url "shop:product_list" %}">Магазин Будівельних Матеріалів</a></p>
+        <div class="search">
+            <form method="GET" action="">
+                <input type="text" name="q" placeholder="Поиск" value="{{ request.GET.q }}">
+                <input type="submit" value="Найти">
+            </form>
+
+        </div>
+        <div id="subheader" align="right">
+         <div class="cartviews" >
+            {% with total_items=cart|length %}
+                {% if cart|length > 0 %}
+            <a href="{% url "cart:cart_detail" %}">Корзина
+                {{ total_items }}{{ total_items|pluralize }},
+                {{ cart.get_total_price }}грн
+            </a>
+             {% else %}
+                Корзина
+             {% endif %}
+             {% endwith %}
+         </div>
+        </div>
+</header>
+
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<img src="{% static "images/brick.jpg" %}">
+
+<footer class="main blur" role="contentinfo">
+      <div class="center grid">
+          <div class="footer-nav">
+              <div class="footer-nav-inner">
+					  <nav role="navigation">
+	                      <small class="title"><i></i></small>
+						  <ul>
+						    <li><a href="/pages/about-us"></a></li>
+						  </ul>
+					  </nav>
+
+					  <nav role="navigation">
+	                      <small class="title"><i></i></small>
+						  <ul>
+						    <li><a href="/pages/contact-us"></a></li>
+						  </ul>
+					  </nav>
+
+					  <nav role="navigation">
+	                      <small class="title"><i></i></small>
+						  <ul>
+
+						  </ul>
+					  </nav>
+
+					  <nav role="navigation">
+	                      <small class="title"><i></i></small>
+						  <ul>
+
+						    <li><a href="/blogs/blog"></a></li>
+
+						    <li><a href="/pages/affiliate"></a></li>
+
+						  </ul>
+					  </nav>
+              </div>
+          </div>
+      </div>
+  </footer>
+<div class="footback"></div>
+</body>
+</html>

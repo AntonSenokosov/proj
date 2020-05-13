@@ -1,0 +1,427 @@
+#rr{
+	margin:0;
+	background-color:#3A3A3A;
+}
+
+#rr ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	position:relative;
+}
+
+#rr ul li{
+	margin:0 -7px 0 0;
+	display:inline-block;
+	background-color:#3A3A3A;
+}
+
+#rr a{
+	display:block;
+	padding:0 10px;
+	color:#FFFFFF;
+	line-height:60px;
+	text-decoration:none;
+}
+
+#rr a:hover{
+	background-color:#000000;
+}
+
+#rr ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+}
+
+#rr ul li:hover>ul{
+	display:inherit;
+}
+
+#rr ul ul li{
+	min-width:170px;
+	float:none;
+	display:list-item;
+	position:relative;
+}
+
+#logot p{
+    font-size:20px;
+    color:#C1C1C1;
+}
+
+#logot{
+    background-color:#1B1B1B;
+}
+
+#sidebar {
+    width:220px;
+    padding:30px 20px 0 0;
+    float:left;
+}
+
+#sidebar ul{
+    margin:0;
+    padding:0;
+}
+
+#sidebar ul li {
+    margin:0;
+    list-style:none;
+    padding:10px 14px;
+}
+
+#sidebar ul li a {
+    display:block;
+}
+
+#sidebar ul li.selected {
+    background:#00006E;
+    border-radius:4px;
+}
+
+#sidebar ul li.selected a {
+    color:#fff;
+}
+
+.cartviews{
+   color:#FFFFFF;
+}
+
+.cartviews a{
+   color:#FFFFFF;
+}
+
+a{
+    text-decoration:none;
+    color:#00006E;
+}
+
+#content{
+    padding: 0 100px;
+    overflow:hidden;
+}
+
+a.button, input[type="submit"] {
+    color:#fff;
+    background:#D03CDB;
+    border-radius:4px;
+    padding:10px 20px;
+    font-size:14px;
+    border:0;
+}
+
+a.button.light {
+    color:#666;
+    background:#ededed;
+}
+
+form p label, form p input {
+    float:left;
+    clear:both;
+}
+
+form p label {
+    font-size:14px;
+    padding-bottom:4px;
+}
+
+form p input {
+    width:300px;
+    font-size:13px;
+    margin-bottom:10px;
+    padding:10px 12px;
+    border:0;
+    background:#efefef;
+    color:#666;
+    border-radius:4px;
+}
+
+#main {
+    float:left;
+    width: 96%;
+    margin-right:-220px;
+    overflow:hidden;
+}
+
+.product-list .item {
+    width:25%;
+    padding:10px 20px 10px 0;
+    float:left;
+    text-align:center;
+    line-height:1.2;
+}
+
+.product-list .item img {
+    width:100%;
+    margin-bottom:8px;
+}
+
+.product-detail {
+    text-align:justify;
+}
+
+.product-detail .price {
+    color:#333;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.product-detail img {
+    width:40%;
+    float:left;
+    padding:0 20px 20px 0;
+}
+
+.product-detail h1 {
+    margin-bottom:0;
+}
+
+.product-detail h2 {
+    margin-top:10px;
+}
+
+.description{
+    float: left;
+}
+
+.main-h {
+    font-size: 32px;
+    margin: 0 0 18px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #000;
+}
+
+.cart{
+    background-color:#898E40;
+}
+
+.log a{
+    font-size:60px;
+    color:#FF0008;
+}
+/*First Footer Start*/
+footer.main {
+    background-color: black;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.center.grid {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.center {
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+footer.main .footer-nav {
+    width: calc(58.33333% - 25.33333px);
+    float: left;
+    margin-left: 16px;
+    margin-left: calc(8.33333% - 17.33333px + 32px);
+}
+
+footer.main .footer-nav .footer-nav-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+footer.main .footer-nav nav {
+    width: 25%;
+}
+
+footer.main .footer-nav nav small.title {
+    font-size: 11px;
+    color: #959595;
+    letter-spacing: 0;
+    line-height: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+footer.main .footer-nav nav ul {
+    display: block !important;
+}
+
+footer.main ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer.main .footer-nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.3px;
+    line-height: 19px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    border: 1px solid transparent;
+}
+
+footer.main .footer-conect {
+    width: calc(25% - 20px);
+    float: left;
+    margin-left: 16px;
+    float: right;
+    margin-right: calc(8.33333% - 17.33333px + 32px);
+    margin-left: 0px;
+}
+
+.center.grid::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.footback{
+    background-color:#3A3A3A;
+    height:10px;
+    padding:30px;
+}
+/*First Footer End*/
+
+/*Search Start*/
+
+.search input[type="submit"]{
+    background-color:green;
+}
+
+.search input[type="text"]{
+    width:25%;
+    height:30px;
+    margin: 0 auto;
+}
+
+.search{
+    text-align:center;
+}
+
+/*Search End*/
+
+
+/*Start*/
+
+.main {
+    flex: 1 0 auto;
+}
+
+.wrapper, .layout-wrap {
+    padding: 0 30px;
+}
+
+.wrapper, .layout-wrap {
+    min-width: 960px;
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.layout {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.layout {
+    min-height: 200px;
+}
+
+.layout-main {
+    float: right;
+    width: 100%;
+}
+
+.layout-main-inner {
+    padding-left: 240px;
+}
+
+.breadcrumbs {
+    margin: 0 0 10px;
+    font-size: 11px;
+    color: #868686;
+    line-height: 1.6;
+}
+
+.main-h {
+    font-size: 32px;
+    margin: 0 0 18px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #000;
+}
+
+.article-text:last-child {
+    margin-bottom: 0;
+}
+
+.article-text {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.text {
+    line-height: 1.5714285714;
+}
+
+.text ul {
+    position: relative;
+}
+
+.sideMenu:last-child {
+    margin-bottom: 0;
+}
+
+ul, ol, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sideMenu-i:first-child {
+    margin-top: 0;
+}
+
+.sideMenu-i > .sideMenu-t {
+    font-size: 17px;
+}
+
+.sideMenu-t {
+    display: inline-block;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.layout-aside {
+    position: relative;
+    float: left;
+    width: 220px;
+    margin-right: -100%;
+}
+
+.layout-aside-inner {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+.layout-aside.__fixed {
+    z-index: 100;
+}
+
+
+/*End*/

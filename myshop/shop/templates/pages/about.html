@@ -1,0 +1,63 @@
+{% extends "shop/base.html" %}
+    {% block content %}
+<main id="main" class="main">
+            <div class="wrapper">
+    <div class="layout">
+        <div class="layout-main">
+            <div class="layout-main-inner">
+                <section class="page">
+                    <h1 class="main-h">О нас</h1>
+<div class="page-content">
+        <div class="article-text text">
+        <p style="text-align: center;"><span style="font-size:22px;"><strong>Компания Аквилон - это не просто интернет-магазин </strong></span></p>
+
+<p>Аквилон является крупнейшим дистрибьютором строительных материалов, инструментов и товаров народного потребления.</p>
+
+<p style="text-align: center;"><span style="font-size:18px;"><strong>Мы развиваемся для вас </strong></span></p>
+
+<p>Мы постоянно анализируем запросы и потребности наших клиентов, поэтому кроме продажи, мы осуществляем широкий спектр услуг:</p>
+
+<ul>
+	<li>комплектация строительных объектов;</li>
+	<li>поставки в розничные магазины по оптовым ценам;</li>
+	<li>собственный импорт и производство торговой марки BudmonsteR;</li>
+	<li>колеровка краски и штукатурки;</li>
+	<li>просчет необходимого количества стройматериалов, консультации профессиональных менеджеров.</li>
+</ul>
+
+<p style="text-align: center;"><span style="font-size:18px;"><strong>Почему нужно выбирать Аквилон </strong></span></p>
+
+<ol>
+	<li><strong>Низкие цены</strong>. Мы работаем напрямую с производителями, что и является гарантией низкой цены;</li>
+	<li><strong>Полная и честная консультация от наших менеджеров</strong>. Мы работаем только с качественными брендами, которые проводят обучение наших сотрудников для того, чтобы мы могли проконсультировать вас по любому вопросу;</li>
+	<li><strong>Быстрая доставка заказов прямо на объект.</strong> Аквилон имеет собственный автопарк, что значительно ускоряет процесс доставки;</li>
+	<li><strong>Собственные бренды. </strong>Мы можем поручиться за их качество и предоставить вам самую низкую цену;</li>
+	<li><strong>Большой ассортимент.</strong> Более 14000 тысяч позиций;</li>
+	<li><strong>Широкая зона покрытия.</strong> Мы работаем на 13 областей (Киевская, Черкасская, Полтавская, Винницкая, Сумская, Одесская, Черниговская, Житомирская, Хмельницкая, Волынская, Львовская, Ивано-Франковская и Ровенская);</li>
+	<li><strong>Поддержка национального производителя.</strong> В нашем ассортименте много украинских компаний, которые постоянно растут и развиваются. Также мы являемся участником “Украинской Ассоциации Производителей Строительных Материалов и Изделий”.</li>
+</ol>
+    </div>
+</div>                </section>
+            </div>
+        </div>
+        <aside class="layout-aside">
+    <div class="layout-aside-inner">
+        <nav class="sideMenu ">
+            <ul class="sideMenu-list">
+
+                                    <li class="sideMenu-i">
+                        <div class="sideMenu-t"><a class="sideMenu-a" href={% url "shop:about" %}">О нас</a></div>
+                                            </li>
+                                    <li class="sideMenu-i">
+                        <div class="sideMenu-t __active"><a class="sideMenu-a" href={% url "shop:delivery" %}">Доставка и Оплата</a></div>
+                                                                                                </li>
+                                    <li class="sideMenu-i">
+                        <div class="sideMenu-t"><a class="sideMenu-a" href={% url "shop:contact" %}">Контакты</a></div>
+                                            </li>
+
+            </ul>
+        </nav>
+    </div>
+</aside>    </div>
+</div>        </main>
+    {% endblock content %}
